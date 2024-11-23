@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter signup form</title>
+    <style type="text/css">
+        body,p{
+            color: black;
+            font-family: verdana;
+            font-size: 10pt;
+        }
+        body table{
+            padding: 30px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <table border=0 cellpadding=10 width=100%>
+        <tr>
+            <td bgcolor="#F0F8FF" align=center valign=top width=17%></td>
+            <td bgcolor="#FFFFFF" align=left valign=top width=83%>
+                <h1>Newsletter sign-up form</h1>
+                <p>Enter your email address and we will send you our weekly newspaper</p>
+                <form action="formhandler.php" method="POST">
+                    <label for="email">Email Address: </label>
+                    <input type="email" size=30 name="email" maxlength="30" placeholder="Enter Email" required><br><br>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
